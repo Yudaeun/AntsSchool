@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    # 로컬: H2 인메모리 / Railway: 환경변수 DATABASE_URL 주입
+    url: ${DATABASE_URL:jdbc:h2:file:./data/antsschool;MODE=PostgreSQL;DB_CLOSE_DELAY=-1}
+    username: ${DATABASE_USERNAME:sa}
+    password: ${DATABASE_PASSWORD:}
+    driver-class-name: ${DATABASE_DRIVER:org.h2.Driver}
+  jpa:
+    hibernate:
+      ddl-auto: ${DDL_AUTO:update}
+    defer-datasource-initialization: true  # data.sql을 Hibernate DDL 이후에 실행
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+  h2:
+    console:
+      enabled: true   # 로컬 개발 시 H2 콘솔 (http://localhost:8090/h2-console)
+  sql:
+    init:
+      mode: always    # data.sql 항상 실행
+
+server:
+  port: ${PORT:8090}
+
+logging:
+  level:
+    root: INFO
+    com.day.antsschool: DEBUG
