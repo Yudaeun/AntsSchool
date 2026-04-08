@@ -1,0 +1,31 @@
+## Android Studio / Gradle
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+## 민감 정보 — 절대 커밋 금지
+# Firebase 설정 (API 키 포함)
+google-services.json
+# Google Services 서버 측 설정
+GoogleService-Info.plist
+# 릴리즈 서명 키스토어
+*.jks
+*.keystore
+# 비밀 값 파일
+secrets.properties
+keystore.properties
+# 환경변수 파일
+.env
+.env.*
