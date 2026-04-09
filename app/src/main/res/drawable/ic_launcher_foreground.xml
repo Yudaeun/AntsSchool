@@ -5,139 +5,177 @@
     android:viewportWidth="108"
     android:viewportHeight="108">
 
-    <!-- ── 몸통 (배) ── -->
+    <!-- ══════════════════════════════════════════
+         학교 건물
+    ══════════════════════════════════════════ -->
+
+    <!-- 건물 본체 -->
     <path
         android:fillColor="#FFFFFF"
-        android:pathData="M45,75 a9,10 0 1,0 18,0 a9,10 0 1,0 -18,0" />
+        android:pathData="M28,62 L80,62 L80,87 L28,87 Z" />
 
-    <!-- ── 가슴 (작은 연결 원) ── -->
+    <!-- 지붕 (사다리꼴) -->
+    <path
+        android:fillColor="#F0F0F0"
+        android:pathData="M23,62 L85,62 L70,46 L38,46 Z" />
+
+    <!-- 종탑 기둥 -->
     <path
         android:fillColor="#FFFFFF"
-        android:pathData="M49,63 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0" />
+        android:pathData="M49,34 L59,34 L59,46 L49,46 Z" />
 
-    <!-- ── 큰 머리 ── -->
+    <!-- 종탑 뾰족 지붕 -->
     <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M40,45 a14,14 0 1,0 28,0 a14,14 0 1,0 -28,0" />
+        android:fillColor="#E8E8E8"
+        android:pathData="M54,23 L61,34 L47,34 Z" />
 
-    <!-- ── 왼쪽 다리 3개 (짧고 통통) ── -->
+    <!-- 종탑 창 (아치형) -->
     <path
-        android:strokeColor="#FFFFFF"
-        android:strokeWidth="3"
+        android:strokeColor="#CCCCCC"
+        android:strokeWidth="1.5"
+        android:fillColor="#D6EAF8"
+        android:pathData="M51,38 Q54,34 57,38 L57,43 L51,43 Z" />
+
+    <!-- 출입문 (아치형) -->
+    <path
+        android:fillColor="#D6EAF8"
+        android:pathData="M46,87 L62,87 L62,73 Q54,66 46,73 Z" />
+
+    <!-- 왼쪽 창문 -->
+    <path
+        android:fillColor="#D6EAF8"
+        android:pathData="M32,52 L43,52 L43,61 L32,61 Z" />
+    <!-- 왼쪽 창문 십자선 -->
+    <path
+        android:strokeColor="#AACCEE"
+        android:strokeWidth="1"
         android:fillColor="#00000000"
-        android:strokeLineCap="round"
-        android:pathData="M49,60 L34,53" />
-    <path
-        android:strokeColor="#FFFFFF"
-        android:strokeWidth="3"
-        android:fillColor="#00000000"
-        android:strokeLineCap="round"
-        android:pathData="M49,63 L32,63" />
-    <path
-        android:strokeColor="#FFFFFF"
-        android:strokeWidth="3"
-        android:fillColor="#00000000"
-        android:strokeLineCap="round"
-        android:pathData="M49,66 L34,73" />
+        android:pathData="M37.5,52 L37.5,61 M32,56.5 L43,56.5" />
 
-    <!-- ── 오른쪽 다리 3개 ── -->
+    <!-- 오른쪽 창문 -->
     <path
-        android:strokeColor="#FFFFFF"
-        android:strokeWidth="3"
+        android:fillColor="#D6EAF8"
+        android:pathData="M65,52 L76,52 L76,61 L65,61 Z" />
+    <!-- 오른쪽 창문 십자선 -->
+    <path
+        android:strokeColor="#AACCEE"
+        android:strokeWidth="1"
         android:fillColor="#00000000"
-        android:strokeLineCap="round"
-        android:pathData="M59,60 L74,53" />
+        android:pathData="M70.5,52 L70.5,61 M65,56.5 L76,56.5" />
+
+    <!-- 계단 -->
     <path
-        android:strokeColor="#FFFFFF"
-        android:strokeWidth="3"
+        android:fillColor="#E0E0E0"
+        android:pathData="M40,87 L68,87 L68,89 L40,89 Z" />
+    <path
+        android:fillColor="#D0D0D0"
+        android:pathData="M37,89 L71,89 L71,91 L37,91 Z" />
+
+    <!-- 건물 테두리 (얇은 그림자) -->
+    <path
+        android:strokeColor="#DDDDDD"
+        android:strokeWidth="1"
         android:fillColor="#00000000"
-        android:strokeLineCap="round"
-        android:pathData="M59,63 L76,63" />
-    <path
-        android:strokeColor="#FFFFFF"
-        android:strokeWidth="3"
-        android:fillColor="#00000000"
-        android:strokeLineCap="round"
-        android:pathData="M59,66 L74,73" />
+        android:pathData="M28,62 L80,62 L80,87 L28,87 Z" />
 
-    <!-- ── 더듬이 ── -->
-    <path
-        android:strokeColor="#FFFFFF"
-        android:strokeWidth="2.5"
-        android:fillColor="#00000000"
-        android:strokeLineCap="round"
-        android:pathData="M47,32 Q39,23 36,19" />
-    <path
-        android:strokeColor="#FFFFFF"
-        android:strokeWidth="2.5"
-        android:fillColor="#00000000"
-        android:strokeLineCap="round"
-        android:pathData="M61,32 Q69,23 72,19" />
-    <!-- 더듬이 끝 동그라미 -->
-    <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M33,19 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0" />
-    <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M69,19 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0" />
+    <!-- ══════════════════════════════════════════
+         벚꽃 꽃잎 (흩날리는 느낌)
+    ══════════════════════════════════════════ -->
 
-    <!-- ── 졸업모자 기둥 ── -->
-    <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M49,28 L59,28 L59,32 L49,32 Z" />
-    <!-- 졸업모자 판 -->
-    <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M37,24 L71,24 L71,28 L37,28 Z" />
-    <!-- 술 (tassel) -->
-    <path
-        android:strokeColor="#FFFFFF"
-        android:strokeWidth="2"
-        android:fillColor="#00000000"
-        android:strokeLineCap="round"
-        android:pathData="M71,26 L75,36" />
-    <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M72.5,36 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0" />
+    <!-- 꽃잎 1 — 왼쪽 위 -->
+    <group android:pivotX="22" android:pivotY="33" android:rotation="25">
+        <path android:fillColor="#FFB7C5"
+              android:pathData="M22,28 Q25.5,33 22,38 Q18.5,33 22,28" />
+    </group>
 
-    <!-- ── 눈 흰자 ── -->
-    <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M42,43 a5.5,5.5 0 1,0 11,0 a5.5,5.5 0 1,0 -11,0" />
-    <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M55,43 a5.5,5.5 0 1,0 11,0 a5.5,5.5 0 1,0 -11,0" />
+    <!-- 꽃잎 2 — 오른쪽 위 -->
+    <group android:pivotX="85" android:pivotY="28" android:rotation="-40">
+        <path android:fillColor="#FFCCD5"
+              android:pathData="M85,23 Q88.5,28 85,33 Q81.5,28 85,23" />
+    </group>
 
-    <!-- ── 눈동자 (짙은 색) ── -->
-    <path
-        android:fillColor="#2E4053"
-        android:pathData="M44.5,44 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0" />
-    <path
-        android:fillColor="#2E4053"
-        android:pathData="M57.5,44 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0" />
+    <!-- 꽃잎 3 — 왼쪽 중 -->
+    <group android:pivotX="19" android:pivotY="52" android:rotation="50">
+        <path android:fillColor="#FF8FA3"
+              android:pathData="M19,47 Q22.5,52 19,57 Q15.5,52 19,47" />
+    </group>
 
-    <!-- 눈 하이라이트 -->
-    <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M46,42 a1.2,1.2 0 1,0 2.4,0 a1.2,1.2 0 1,0 -2.4,0" />
-    <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M59,42 a1.2,1.2 0 1,0 2.4,0 a1.2,1.2 0 1,0 -2.4,0" />
+    <!-- 꽃잎 4 — 오른쪽 중 -->
+    <group android:pivotX="88" android:pivotY="50" android:rotation="-20">
+        <path android:fillColor="#FFB7C5"
+              android:pathData="M88,45 Q91.5,50 88,55 Q84.5,50 88,45" />
+    </group>
 
-    <!-- ── 귀여운 미소 ── -->
-    <path
-        android:strokeColor="#2E4053"
-        android:strokeWidth="2"
-        android:fillColor="#00000000"
-        android:strokeLineCap="round"
-        android:pathData="M46,53 Q54,59 62,53" />
+    <!-- 꽃잎 5 — 상단 중 (탑 왼쪽) -->
+    <group android:pivotX="37" android:pivotY="22" android:rotation="15">
+        <path android:fillColor="#FFCCD5"
+              android:pathData="M37,17 Q40.5,22 37,27 Q33.5,22 37,17" />
+    </group>
 
-    <!-- ── 볼터치 (연한 분홍) ── -->
-    <path
-        android:fillColor="#40FF8A80"
-        android:pathData="M36,50 a5,3.5 0 1,0 10,0 a5,3.5 0 1,0 -10,0" />
-    <path
-        android:fillColor="#40FF8A80"
-        android:pathData="M62,50 a5,3.5 0 1,0 10,0 a5,3.5 0 1,0 -10,0" />
+    <!-- 꽃잎 6 — 상단 중 (탑 오른쪽) -->
+    <group android:pivotX="71" android:pivotY="21" android:rotation="-50">
+        <path android:fillColor="#FFB7C5"
+              android:pathData="M71,16 Q74.5,21 71,26 Q67.5,21 71,16" />
+    </group>
+
+    <!-- 꽃잎 7 — 왼쪽 하단 -->
+    <group android:pivotX="24" android:pivotY="76" android:rotation="35">
+        <path android:fillColor="#FF8FA3"
+              android:pathData="M24,71 Q27.5,76 24,81 Q20.5,76 24,71" />
+    </group>
+
+    <!-- 꽃잎 8 — 오른쪽 하단 -->
+    <group android:pivotX="84" android:pivotY="74" android:rotation="-30">
+        <path android:fillColor="#FFCCD5"
+              android:pathData="M84,69 Q87.5,74 84,79 Q80.5,74 84,69" />
+    </group>
+
+    <!-- 꽃잎 9 — 상단 (탑 바로 위) -->
+    <group android:pivotX="63" android:pivotY="19" android:rotation="60">
+        <path android:fillColor="#FFB7C5"
+              android:pathData="M63,15 Q66,19 63,23 Q60,19 63,15" />
+    </group>
+
+    <!-- 꽃잎 10 — 왼쪽 위 (작은) -->
+    <group android:pivotX="32" android:pivotY="40" android:rotation="-10">
+        <path android:fillColor="#FFCCD5"
+              android:pathData="M32,37 Q34.5,40 32,43 Q29.5,40 32,37" />
+    </group>
+
+    <!-- 꽃잎 11 — 오른쪽 위 (작은) -->
+    <group android:pivotX="78" android:pivotY="38" android:rotation="45">
+        <path android:fillColor="#FF8FA3"
+              android:pathData="M78,35 Q80.5,38 78,41 Q75.5,38 78,35" />
+    </group>
+
+    <!-- 꽃잎 12 — 하단 -->
+    <group android:pivotX="54" android:pivotY="90" android:rotation="20">
+        <path android:fillColor="#FFCCD5"
+              android:pathData="M54,86 Q57,90 54,94 Q51,90 54,86" />
+    </group>
+
+    <!-- 완성형 작은 꽃 1 (왼쪽 상단) — 4개 꽃잎 + 중심 -->
+    <path android:fillColor="#FFB7C5"
+          android:pathData="M22,24 a2,3.5 0 1,0 0.1,0" />
+    <path android:fillColor="#FFB7C5"
+          android:pathData="M25.5,27.5 a3.5,2 0 1,0 0.1,0" />
+    <path android:fillColor="#FFB7C5"
+          android:pathData="M22,31 a2,3.5 0 1,0 0.1,0" />
+    <path android:fillColor="#FFB7C5"
+          android:pathData="M18.5,27.5 a3.5,2 0 1,0 0.1,0" />
+    <path android:fillColor="#FFECF0"
+          android:pathData="M20.5,27.5 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0" />
+
+    <!-- 완성형 작은 꽃 2 (오른쪽 상단) -->
+    <path android:fillColor="#FFCCD5"
+          android:pathData="M87,21 a2,3.5 0 1,0 0.1,0" />
+    <path android:fillColor="#FFCCD5"
+          android:pathData="M90.5,24.5 a3.5,2 0 1,0 0.1,0" />
+    <path android:fillColor="#FFCCD5"
+          android:pathData="M87,28 a2,3.5 0 1,0 0.1,0" />
+    <path android:fillColor="#FFCCD5"
+          android:pathData="M83.5,24.5 a3.5,2 0 1,0 0.1,0" />
+    <path android:fillColor="#FFECF0"
+          android:pathData="M85.5,24.5 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0" />
 
 </vector>
