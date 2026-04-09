@@ -9,10 +9,8 @@ plugins {
 group = "com.day.antsschool"
 version = "0.0.1-SNAPSHOT"
 
-java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(17)
-    }
+kotlin {
+    jvmToolchain(22)  // Railway 환경의 Java 버전으로 맞춤
 }
 
 repositories {
