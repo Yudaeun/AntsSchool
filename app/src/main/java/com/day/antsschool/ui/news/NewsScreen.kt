@@ -60,6 +60,11 @@ fun NewsScreen(modifier: Modifier = Modifier, uid: String? = null) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
     val listState = rememberLazyListState()
 
+    // 뉴스 탭 진입 시 최초 로드
+    LaunchedEffect(Unit) {
+        if (viewModel.uiState.value.news.isEmpty()) viewModel.loadNews(reset = true)
+    }
+
     LaunchedEffect(uid) {
         if (uid != null) viewModel.loadBookmarks(uid)
     }

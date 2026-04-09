@@ -70,6 +70,7 @@ fun HomeScreen(
     LaunchedEffect(Unit) {
         homeViewModel.loadTodayQuote()
         homeViewModel.loadMarket()
+        if (newsViewModel.uiState.value.news.isEmpty()) newsViewModel.loadNews(reset = true)
     }
 
     // 모달 — newsViewModel 상태로 통합

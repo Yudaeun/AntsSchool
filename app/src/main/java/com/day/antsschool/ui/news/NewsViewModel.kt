@@ -36,9 +36,8 @@ class NewsViewModel : ViewModel() {
 
     private var currentPage = 0
 
-    init {
-        loadNews(reset = true)
-    }
+    // 뉴스 탭 진입 시 NewsScreen에서 명시적으로 호출
+    // init에서 자동 로드 제거 → 앱 시작 시 불필요한 네트워크 요청 방지
 
     fun selectSource(source: String) {
         if (_uiState.value.selectedSource == source) return
