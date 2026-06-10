@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit
 object ApiClient {
     // 에뮬레이터에서 PC localhost 접근: 10.0.2.2
     // Railway 배포 후: "https://your-app.up.railway.app/"
-    private const val BASE_URL = "https://antsschool-production.up.railway.app/"
+    private const val BASE_URL = "https://antsschool.onrender.com/"
 
     private val okHttpClient = OkHttpClient.Builder()
         .addInterceptor(
